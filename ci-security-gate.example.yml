@@ -1,0 +1,30 @@
+# Install into an authorized repository only after configuring its protected environment and trusted runner.
+name: AI security regression gate
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+permissions:
+  contents: read
+jobs:
+  adversarial-regression:
+    runs-on: [self-hosted, Windows, ray-i-security]
+    environment: ai-security-approved
+    timeout-minutes: 35
+    steps:
+      - name: Replay approved synthetic corpus
+        shell: pwsh
+        env:
+          RAYI_APP_PATH: ${{ vars.RAYI_APP_PATH }}
+          RAYI_DATA_DIR: ${{ vars.RAYI_DATA_DIR }}
+          RAYI_CI_CONFIG: ${{ vars.RAYI_CI_CONFIG }}
+          MODEL_API_KEY: ${{ secrets.MODEL_API_KEY }}
+        run: |
+          if (-not $env:RAYI_APP_PATH -or -not $env:RAYI_DATA_DIR -or -not $env:RAYI_CI_CONFIG) { throw 'Configure trusted app, data and signed-scope CI config paths.' }
+          $rayiPython = Join-Path $env:RAYI_APP_PATH '.audit-runtime\Scripts\python.exe'
+          $rayiGate = Join-Path $env:RAYI_APP_PATH 'security_ci.py'
+          $rayiEvidence = Join-Path $env:RUNNER_TEMP ('ray-i-regression-' + $env:GITHUB_RUN_ID + '.json')
+          & $rayiPython $rayiGate --config $env:RAYI_CI_CONFIG --data-dir $env:RAYI_DATA_DIR --output $rayiEvidence
+          if ($LASTEXITCODE -ne 0) { throw 'AI security gate failed. Review the protected local evidence file.' }
+# Make deployment depend on this job/check in repository protection settings.
+# Do not run untrusted pull-request code on a runner that holds production credentials or the engagement signing key.

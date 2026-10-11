@@ -1,0 +1,565 @@
+{
+  "schema": "rayi-source-baseline-v1",
+  "appVersion": "3.1.0",
+  "capturedDate": "2026-10-10",
+  "timezone": "America/New_York",
+  "gitTag": "baseline-v1",
+  "repository": "https://github.com/rayitalks/security-hardening-agent",
+  "files": [
+    {
+      "path": ".dockerignore",
+      "bytes": 120,
+      "sha256": "38a760ec4aa8188726a585bfdfc4a1a191047788d167b3194c155000258efc4e"
+    },
+    {
+      "path": ".gitattributes",
+      "bytes": 116,
+      "sha256": "9beeade37989bb29e55ef7f990caeac8fc8df055cdfd1374be856bf4dbee75d8"
+    },
+    {
+      "path": ".gitignore",
+      "bytes": 281,
+      "sha256": "53af1157c5e39a63f7a03dc9e6087be967c3ea47f52fecf63e8c9de51c9b5c0f"
+    },
+    {
+      "path": "BASELINE-VERIFICATION.md",
+      "bytes": 3335,
+      "sha256": "fff3e20cc54581c9442be72a1e0de49b50034f4c39f3af02f0a5abece3536f4a"
+    },
+    {
+      "path": "Dockerfile",
+      "bytes": 2239,
+      "sha256": "9a3e04262dc3a56a1807156a4a73f2c8407ebd49c997a61b8dc91724e919139e"
+    },
+    {
+      "path": "Install-Audit-Tools.bat",
+      "bytes": 60,
+      "sha256": "89e9d653d3ebd8346cb13af1e4d29975c5ca5bb02eb1c415c0ac618cfc5a7e2b"
+    },
+    {
+      "path": "Install-Model-Tools.bat",
+      "bytes": 164,
+      "sha256": "8c64c30fdf90a41b9f6216a11c63d69ea48acea0fb6b230fdb1a010ccb30d8bd"
+    },
+    {
+      "path": "Install-SkillSpector.bat",
+      "bytes": 61,
+      "sha256": "394e6b0c631cb4ecb4a378fcac95598b92ce6d037d9af9009a3435da38ec868e"
+    },
+    {
+      "path": "Install-Trivy.bat",
+      "bytes": 54,
+      "sha256": "2a422500b705728c5c8387db29b93c29156c2c9411b3092d2fcd3816860a6172"
+    },
+    {
+      "path": "README.md",
+      "bytes": 75162,
+      "sha256": "54ad5d324c78154415d0512238680d3ac535da1ad6a5a8f5909ce910025378ad"
+    },
+    {
+      "path": "START-HERE.md",
+      "bytes": 5327,
+      "sha256": "6b5a9fbbad44f15ea4b30fc35add3c8bcc876a3110930859d3b5441fa069ef38"
+    },
+    {
+      "path": "Setup-Mac.command",
+      "bytes": 386,
+      "sha256": "06820bff2d2e85f723088c56feaba785699aaec6010ad1864274b80b896a0627"
+    },
+    {
+      "path": "Setup-Windows.bat",
+      "bytes": 466,
+      "sha256": "ff8ea2f68a2809bdcd8e2f716b30ba76f5d48feba3d1c70434ebff4ba7740c48"
+    },
+    {
+      "path": "Start-Windows.bat",
+      "bytes": 64,
+      "sha256": "8728f963cbbbd43072834999c818fc5c61c93a2237be4a053025fcee991ca47f"
+    },
+    {
+      "path": "VERIFICATION.md",
+      "bytes": 9379,
+      "sha256": "0928a851d88f74439565366bb66b5b3c34bf456bd333136b2182ac0245d9c752"
+    },
+    {
+      "path": "actions.py",
+      "bytes": 9342,
+      "sha256": "b1b1a4bc3870a885168cfa229eb0ac4b513eaa34473e5b97efb8eccaba9b3565"
+    },
+    {
+      "path": "agent_client.py",
+      "bytes": 2097,
+      "sha256": "795b068a2cbd51d4fd29efb0afb52375e2050a51b6785b720f6acf996c7684f8"
+    },
+    {
+      "path": "agent_scanner.py",
+      "bytes": 4399,
+      "sha256": "ba6b5edfedecbd96742b776dc62a2a4acdf67aec054b8b9588ed04908c5d7086"
+    },
+    {
+      "path": "app.py",
+      "bytes": 16917,
+      "sha256": "620f29c2696eec8c7e0441dfdcc5290e65a451377c7243bc109af869e66e9e3c"
+    },
+    {
+      "path": "asset_registry.py",
+      "bytes": 11033,
+      "sha256": "aecd529628d634e0e07a0e61363b7cc43f4c9c02f76fcce0b120d30ba8ec9694"
+    },
+    {
+      "path": "audit_export.py",
+      "bytes": 1268,
+      "sha256": "17dfd8cfec56f6a748ef3ae67490046b0aa2636ef247d6ee0caad40ea125a502"
+    },
+    {
+      "path": "audit_trail.py",
+      "bytes": 5466,
+      "sha256": "a09e90fda5fd1eeb17608b644520ba9d2ec227dc9e5cf6753f1dbaa4b37493a7"
+    },
+    {
+      "path": "auth_events.ps1",
+      "bytes": 2776,
+      "sha256": "8d623497a652eb74ba50fb27598114244ac0e2c2b280bc50f69dafb692c8bb39"
+    },
+    {
+      "path": "behavior_rules.py",
+      "bytes": 4910,
+      "sha256": "0204792fa7120156f4c30749b32d97cefe6d54fade2c27eaf6c861cb8bd9d8b8"
+    },
+    {
+      "path": "ci-security-gate.example.yml",
+      "bytes": 1547,
+      "sha256": "42a05495e3986c02748ac2f81949b24f67021e7b03d9f3dba6e3cd423a5eb513"
+    },
+    {
+      "path": "collector.py",
+      "bytes": 5681,
+      "sha256": "043b958ce330ce81713aefdc2b08159d04a3430802a41ede8b12106218a45876"
+    },
+    {
+      "path": "compose.yaml",
+      "bytes": 648,
+      "sha256": "a97cfb06797c9752f365ce4c3544ba6e2585f09db4fbaf67af5b3a92089d87fc"
+    },
+    {
+      "path": "constraints-model.txt",
+      "bytes": 1874,
+      "sha256": "2406cf22af671601243fc30cb4191512a9df2a6445e8d30e774e98c2d5a45be7"
+    },
+    {
+      "path": "constraints-skillspector.txt",
+      "bytes": 1242,
+      "sha256": "786d94450c7e45e6e47310edac39baebf9bc6893bc0be92e9d6e25d3ed23db26"
+    },
+    {
+      "path": "container_collect.py",
+      "bytes": 579,
+      "sha256": "ad6313a4b1c7f6ba0a1ce181c1998c5cde7ffcb2dff5322ee6fe1b5cea56d916"
+    },
+    {
+      "path": "containers.py",
+      "bytes": 35962,
+      "sha256": "5c3a55d611c1a4d6c881341c5c26bc4529d5ebd421fcb4300bbeccb05d371e74"
+    },
+    {
+      "path": "defense_ops.py",
+      "bytes": 11675,
+      "sha256": "5d8d9f43943563e9df3ecb333b1c847a0eb9f7d506922246c07f603102916b95"
+    },
+    {
+      "path": "deployment_audits.py",
+      "bytes": 29883,
+      "sha256": "4fd23426b236d75a6f963086bbec042ba2e232f327ae59a60654ca7dfa68a58b"
+    },
+    {
+      "path": "endpoint-providers.js",
+      "bytes": 6728,
+      "sha256": "b206a43589e7709654f03e2cef697e0ed7bc2a842baefc5f134b461288c6665f"
+    },
+    {
+      "path": "engagements.py",
+      "bytes": 2496,
+      "sha256": "52ec75becc2690077e9663b8b2f9f08c803806b16d090424baeb2bae90806358"
+    },
+    {
+      "path": "engine.py",
+      "bytes": 29037,
+      "sha256": "09eb60dd0f4b0c57badc6032b39b129e2c09eeccbdea1c4851f708b76eec1f11"
+    },
+    {
+      "path": "government_guidance.json",
+      "bytes": 23120,
+      "sha256": "3bb31460df1dcca1ec69b221b031fafcd19643fb0f5fea9df23677218031255b"
+    },
+    {
+      "path": "guardrails.py",
+      "bytes": 6451,
+      "sha256": "1406a58305fbce94769df464cce99128c6d35506d20576265b68fe70abee5bcd"
+    },
+    {
+      "path": "index.html",
+      "bytes": 73064,
+      "sha256": "6f671551289c279a07f9e1a954a87c0aa4542d0865a7033cd68da4e0314427dc"
+    },
+    {
+      "path": "inference_metrics.py",
+      "bytes": 3012,
+      "sha256": "d391baab6afb53713f1dd7e88b752130eafec39d7a0d368c927ca696c9b77fab"
+    },
+    {
+      "path": "inference_providers.py",
+      "bytes": 7322,
+      "sha256": "510c46bcca89091fb8d7a4b8f02cc31041945f9d04a08df54feb7b18141d29ed"
+    },
+    {
+      "path": "install_audit_tools.py",
+      "bytes": 692,
+      "sha256": "956a778d4c656884079e3d8a254961f1a15843a15ef0ff484b41dec08bf5ac7f"
+    },
+    {
+      "path": "install_gitleaks.py",
+      "bytes": 2320,
+      "sha256": "13542c02527460f0c7668a26e2c8c7af3be165641c6a73088a59ff8cf5fad653"
+    },
+    {
+      "path": "install_model_tools.py",
+      "bytes": 1235,
+      "sha256": "79b5655c2d866ce9ea36b066d6a125aad56d52123dcae5bfec7366d1a2bed7ef"
+    },
+    {
+      "path": "install_skillspector.py",
+      "bytes": 1180,
+      "sha256": "7c3b94887a0f1b154f6d96156685342abdd9b4ee5c90c055475cec07e6c2b1ab"
+    },
+    {
+      "path": "install_trivy.py",
+      "bytes": 2906,
+      "sha256": "7ae52d9da95d58ea8118cd06153d29d8c0ff409225381b0d40e111c864c7b4d1"
+    },
+    {
+      "path": "integrity_monitor.py",
+      "bytes": 9040,
+      "sha256": "94c81a302abd4895a897738cc1bed65c52425bbca61e9861234f778fdc10ddc4"
+    },
+    {
+      "path": "launch.py",
+      "bytes": 1334,
+      "sha256": "d77f3cc3d5cd77ba3f66ddec6dd0e7169605d316955a26baa9d9f4e099d27794"
+    },
+    {
+      "path": "licenses/EFF-WORDLIST.md",
+      "bytes": 632,
+      "sha256": "25c2aefe9690c24af59bd61c8943ea454b5e9c7abfcfd31a3ac69678768ec53e"
+    },
+    {
+      "path": "licenses/GITLEAKS-LICENSE",
+      "bytes": 1069,
+      "sha256": "e3884b252b3bfc045e55be43a34d1e80da070bc6f804ac95bf4660e97d62ebc6"
+    },
+    {
+      "path": "licenses/ModelAudit-LICENSE.txt",
+      "bytes": 1072,
+      "sha256": "883be3f9d75f3b746d26eae419c112faf79cd17f7ca3bd5c446fd32939ee973c"
+    },
+    {
+      "path": "licenses/NVIDIA-SkillSpector-LICENSE.txt",
+      "bytes": 10972,
+      "sha256": "3f34f449075e0cf4222e2e172c5f6569b202dd2ae75f2e396880ac31853e68d6"
+    },
+    {
+      "path": "licenses/NVIDIA-THIRD-PARTY-NOTICES.md",
+      "bytes": 4628,
+      "sha256": "120abe10aa5d276499826ff436edfffc3abba552663d42c739e09a477580cc79"
+    },
+    {
+      "path": "licenses/Scapy-LICENSE.txt",
+      "bytes": 18092,
+      "sha256": "8177f97513213526df2cf6184d8ff986c675afb514d4e68a404010521b880643"
+    },
+    {
+      "path": "licenses/Trivy-LICENSE.txt",
+      "bytes": 11357,
+      "sha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4"
+    },
+    {
+      "path": "licenses/psutil-LICENSE.txt",
+      "bytes": 1577,
+      "sha256": "c7adc4d5d1337a548b967421f1fbe258b93033a0417708fd6f4e38f8ecbceb80"
+    },
+    {
+      "path": "live_monitor.py",
+      "bytes": 7204,
+      "sha256": "6ff6a49150fb404b2023bc7cad6a716c0c204ad72af2c0b9240f3058cb332541"
+    },
+    {
+      "path": "malware_intel.py",
+      "bytes": 6389,
+      "sha256": "873df01629e54a5505ab5038e3835644284d6be9607b4a01e64998fad3ccfe44"
+    },
+    {
+      "path": "mcp_security.py",
+      "bytes": 10406,
+      "sha256": "62ee39ee09ebe0e22841d756195286aa2cd58651ba9ded6e7d29f3fa73674cf6"
+    },
+    {
+      "path": "model-assurance.js",
+      "bytes": 10752,
+      "sha256": "7ba0e7aa15b9348c0a69ec35dd0b7e5e35fab9254a84a072740f656e6221e546"
+    },
+    {
+      "path": "model_behavior.py",
+      "bytes": 14153,
+      "sha256": "64c9e26130bbcb9520cec4950fd9a46efa1e457e57806154977476dee9158ca5"
+    },
+    {
+      "path": "model_tools.py",
+      "bytes": 13201,
+      "sha256": "6fcaa0119f29cbc90cbd15d6d0287f6e254b14f3bfead6967ef56c6268abd740"
+    },
+    {
+      "path": "model_weights.py",
+      "bytes": 4185,
+      "sha256": "d00700b074efa0a98e14b36624b0da2eaf7c261af5f748fb8afb8523b8f9a93c"
+    },
+    {
+      "path": "model_worker.py",
+      "bytes": 2031,
+      "sha256": "9d5b209017dbdc797e0b871c6a842cf24cd1cb4f4f891dfbf952b3a572906363"
+    },
+    {
+      "path": "monitor.html",
+      "bytes": 8189,
+      "sha256": "4dce22d2197fd09742ec1a59031c016044e1443036bfb1fed1dc3211cf785fbc"
+    },
+    {
+      "path": "monitor_worker.py",
+      "bytes": 16053,
+      "sha256": "b834d39d47696d5c24bacfb2643c1e003882f134a60a550c6acfc9ef6d7c677b"
+    },
+    {
+      "path": "packet_worker.py",
+      "bytes": 8749,
+      "sha256": "1d9c432fda309527650d871c98d4bc0f60b793970d689a8c8fca009a4f876126"
+    },
+    {
+      "path": "pdf_source_worker.py",
+      "bytes": 1581,
+      "sha256": "789287549662227894933a528babf491a378355c5180b83dc911bb3ddf18a274"
+    },
+    {
+      "path": "pqc_keytool.py",
+      "bytes": 1395,
+      "sha256": "c0abf782f827c3191321f91208f4b4b618f28ec5fdb5b95c0409f7d0e0452c10"
+    },
+    {
+      "path": "pqc_tools.py",
+      "bytes": 3055,
+      "sha256": "8171656289791984a958fcd97727fd5750ca013c45a649dd875e5794bb8b0e83"
+    },
+    {
+      "path": "pqc_worker.cjs",
+      "bytes": 5973,
+      "sha256": "3211a9fed4219e1f9a7a95073077172ba6b34705c1bc8f535fa68c8b7334de7e"
+    },
+    {
+      "path": "purple_team.py",
+      "bytes": 6129,
+      "sha256": "407d11de79557ba9e2cfc5beec05054c7c8bf7e66fb07498eddf62c5aa208b0a"
+    },
+    {
+      "path": "redteam.py",
+      "bytes": 9300,
+      "sha256": "8c8ce0a7f7e73427cd7c7928689dc0706055819d47d2db327d3d3636ed971004"
+    },
+    {
+      "path": "remote_probe.py",
+      "bytes": 5279,
+      "sha256": "fbc5c84ce7ed8e457db80384fe308b2308ef7d9952a9a8cd3a0d83d548b84e24"
+    },
+    {
+      "path": "runtime_gateway.py",
+      "bytes": 19479,
+      "sha256": "f7b7d0a65e1c23cb6de21317aa690bf446fc32dd61428ba0e25f3d1d37153374"
+    },
+    {
+      "path": "scan.ps1",
+      "bytes": 6848,
+      "sha256": "86d7d3d7a45be4a42a3da6da0d9e56ff66ec37057b5160aaac5c01e2ab4d3550"
+    },
+    {
+      "path": "scan_center.py",
+      "bytes": 19103,
+      "sha256": "e54eba0fa640023ed0bf4f6d03c45c5653e2b1577a745694def367c3d705bbb5"
+    },
+    {
+      "path": "security_ci.py",
+      "bytes": 1129,
+      "sha256": "258519e92274bc07efe436ca470b5bb8fce47ad3c319073ba9a34ca9c7d8a648"
+    },
+    {
+      "path": "security_store.py",
+      "bytes": 3197,
+      "sha256": "83d958e615d824d9a43dd01bb8af2e5339e01a99fde016754577ef93aa24b4be"
+    },
+    {
+      "path": "setup_device.py",
+      "bytes": 3690,
+      "sha256": "4c9232780de7435579fcb5bb53359838da19d9b7709b3f74a2b223e68add6b0c"
+    },
+    {
+      "path": "skillspector_integration.py",
+      "bytes": 14242,
+      "sha256": "3514f0cdd05d1e7e1d18cf55ea8394e388f583ffbbb0b1b6a9cd3ee3500200cd"
+    },
+    {
+      "path": "skillspector_worker.py",
+      "bytes": 2388,
+      "sha256": "1a9a5ed62bffe50e46f583d2f2db2becd530a08c7487a9f0fcc717f02ccb01b2"
+    },
+    {
+      "path": "start.sh",
+      "bytes": 64,
+      "sha256": "c1da1bf8c6d4944b58299f7a854f1a353f46b1493b8763397939fc768eabbe97"
+    },
+    {
+      "path": "team-workspace.js",
+      "bytes": 20229,
+      "sha256": "ad7166469977886d54e6fd12ac07c0280c2125211c3d707fe47a9bc48b1809b1"
+    },
+    {
+      "path": "team_suite.py",
+      "bytes": 9270,
+      "sha256": "4db2dcf91284cf82b67fa254de2ece96d0a71b6e092b91506dc190e2cfa90a36"
+    },
+    {
+      "path": "test_agent_scanner.py",
+      "bytes": 3047,
+      "sha256": "506eab4c923a33d42b46b6a3b169867f97acb471eeacf78ca667d44dcdc870ba"
+    },
+    {
+      "path": "test_app.py",
+      "bytes": 7719,
+      "sha256": "2f2a2aaf4e5c6f18bf61400214ab251c0bd7f239f0484e9e98c3b2d92a95417b"
+    },
+    {
+      "path": "test_containers.py",
+      "bytes": 9915,
+      "sha256": "8dad592ba48b6af5154cedd9f464b56f77951bea36a479a38bc165b70e272bd5"
+    },
+    {
+      "path": "test_deployment.py",
+      "bytes": 5210,
+      "sha256": "f56f82df8b5af40102e38eccbbf7c070dcbcbea0d3bad09d3ccab6539ffb6653"
+    },
+    {
+      "path": "test_inference_providers.py",
+      "bytes": 13925,
+      "sha256": "a825b07d64fcbb97859dc564da26dfee207e3937df00fc294f63ca2fbe5e198d"
+    },
+    {
+      "path": "test_model_actions.py",
+      "bytes": 8041,
+      "sha256": "c245dd3268ac97d05dd77d9f653732f6fd537d847a7ae5e0df6e53730c287924"
+    },
+    {
+      "path": "test_model_assurance.py",
+      "bytes": 14561,
+      "sha256": "ab0234a16cd4f87e5dfc278f5902d817d61a258acf19f072038d97eb8839fd7e"
+    },
+    {
+      "path": "test_model_exports.cjs",
+      "bytes": 2092,
+      "sha256": "7e6624a2d88dbb473e908b440301cc300f5d9a51ede08f8d7d32aff1383ec650"
+    },
+    {
+      "path": "test_operations.py",
+      "bytes": 13591,
+      "sha256": "0fc0c9e27620cd7112c6862c94ff363a8e92c3c887ac67641ffae7bac184f5f0"
+    },
+    {
+      "path": "test_password.cjs",
+      "bytes": 2928,
+      "sha256": "aab2fc718913170626a692fcbe9c875c5fda1d6e72652157629c98ab5d950bed"
+    },
+    {
+      "path": "test_pqc.cjs",
+      "bytes": 3092,
+      "sha256": "20d79247138ea6eb870d4200419a467134bee527fb49d76ee39c9ff3b68cee20"
+    },
+    {
+      "path": "test_pqc_tools.py",
+      "bytes": 3060,
+      "sha256": "233f6fed1a680d4b87c51d26b58e66672beff60f11a1b1ee97fc1aebdd4ef4d2"
+    },
+    {
+      "path": "test_scan_center.py",
+      "bytes": 7675,
+      "sha256": "fd0e5b3e2e3961c47527a5490cc235666fa2752791af35b908d7dcdfbb93fc3f"
+    },
+    {
+      "path": "test_skillspector.py",
+      "bytes": 5042,
+      "sha256": "35b8be789d75ce8b05920049bfdb0a62ccbbf3618057c290f5d446c9b14a2108"
+    },
+    {
+      "path": "test_vulnerabilities.py",
+      "bytes": 10447,
+      "sha256": "289de23343c8ce3fd4bda3e950810ca0c5ea4a9148e56bd38f8a8860be0a522f"
+    },
+    {
+      "path": "test_workspace.py",
+      "bytes": 15174,
+      "sha256": "b6837c8202eb7ae749ea3f9f4ad9d10ea0eab1c9e2b38f5a1cf118b65a7d7fd5"
+    },
+    {
+      "path": "traffic.py",
+      "bytes": 6732,
+      "sha256": "b899b6f4a32c4a3bd9ab04e719825c941ed3e75ed4d0a1f0220bf9a4c3b7620f"
+    },
+    {
+      "path": "vendor/modelaudit-0.2.52-py3-none-any.whl",
+      "bytes": 2036234,
+      "sha256": "79f3a1c33acc04f8d3dc04fa0cf7ba6fc0823054f1196662d3aed64805e9aa08"
+    },
+    {
+      "path": "vendor/skillspector-2.12.0-py3-none-any.whl",
+      "bytes": 696639,
+      "sha256": "c158e965bca8cd7efea821ce973a19a858026041b3e999369f7bdf66ea93a213"
+    },
+    {
+      "path": "vendor/yara_python-4.5.4-cp314-cp314-win_amd64.whl",
+      "bytes": 187968,
+      "sha256": "8b844c35c74b6cd9758f82ddd7cb3aa27fd8ce705063cfc36609e764e09a23c1"
+    },
+    {
+      "path": "vm_hyperv.ps1",
+      "bytes": 1663,
+      "sha256": "fcf16d15f35565cb8962d373a1e1dce86088f7c52aa755bbafaaba9831caa99a"
+    },
+    {
+      "path": "vm_remote.py",
+      "bytes": 3488,
+      "sha256": "86f4c73dfed4e72c1f3bca0048a5fb6e208cc9c945c7401d096f6738b51e5d37"
+    },
+    {
+      "path": "vm_scan.py",
+      "bytes": 11801,
+      "sha256": "b4664fce3a045796c60b580c2e5a3c74c55498e97df1a25ef48dee288c4824dd"
+    },
+    {
+      "path": "vulnerabilities.py",
+      "bytes": 31541,
+      "sha256": "3ec8c8f56adbc2f136ae5025e07ea620100590f3aa5a75ef076a22ad53fb1462"
+    },
+    {
+      "path": "weight_worker.py",
+      "bytes": 11880,
+      "sha256": "c1b115d95f9aa53041b0e5d284f7237689a04b9e9887c2e9dae1b2c4ea22b300"
+    },
+    {
+      "path": "workspace.js",
+      "bytes": 175387,
+      "sha256": "2ffb9a13adb952dfeea63fc6e01f091a904b2d905c80f005e7d399a3bd5af003"
+    }
+  ]
+}

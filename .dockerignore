@@ -1,0 +1,15 @@
+.git
+.runtime
+.model-runtime
+.audit-runtime
+.tools
+.data
+__pycache__
+*.pyc
+*.json
+*.log
+.env
+.env.*
+work
+reports
+*.zip

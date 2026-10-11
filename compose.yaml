@@ -1,0 +1,26 @@
+services:
+  security-agent:
+    build: .
+    image: ray-i-security-hardening-agent:3.0
+    ports:
+      - "127.0.0.1:8765:8765"
+      - "127.0.0.1:8766:8766"
+    extra_hosts:
+      - "host.docker.internal:host-gateway"
+    read_only: true
+    volumes:
+      - threat-data:/data
+    tmpfs:
+      - /tmp:size=2g,noexec,nosuid
+    cap_drop:
+      - ALL
+    security_opt:
+      - no-new-privileges:true
+    pids_limit: 128
+    mem_limit: 2g
+    cpus: 2.0
+    # To inspect a local folder, uncomment and replace the source path:
+    # Add to the volumes list above:
+    #   - "D:/AI/my-project:/scan:ro"
+volumes:
+  threat-data:
