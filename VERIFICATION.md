@@ -1,4 +1,4 @@
-# Security Hardening Agent 3.0 — verification
+# Ray-i Security Hardening Agent 3.0 — verification
 
 Trademark of Ray-i Consulting LLC.
 

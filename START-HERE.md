@@ -1,18 +1,18 @@
 # Move this baseline to another device
 
-Private repository: https://github.com/rayitalks/security-hardening-agent
+Public repository: https://github.com/rayitalks/ray-i-security-hardening-agent
 
 This is the application source for **Ray-i Security Hardening Agent 3.1.0**, captured October 10, 2026 (America/New_York). The `baseline-v1` Git tag identifies this starting point. The original application remains installed separately on the first Windows computer; this repository is the portable working copy.
 
 ## First setup on your Mac or second Windows computer
 
-1. Sign in to GitHub as `rayitalks` (or an account you explicitly grant repository access).
-2. Install Git, or use GitHub Desktop to clone the private repository. Install **Python 3.12** from https://www.python.org/downloads/. Python 3.13 is also accepted by the bundled engine installers. Python 3.14 can run the console but is not supported by the model-tools installer.
+1. Download or clone this public repository; a GitHub account is not required to download it.
+2. Install Git, or use GitHub Desktop to clone the repository. Install **Python 3.12** from https://www.python.org/downloads/. Python 3.13 is also accepted by the bundled engine installers. Python 3.14 can run the console but is not supported by the model-tools installer.
 3. Clone into a local folder outside OneDrive or iCloud, such as `~/Projects` on macOS or `%USERPROFILE%\Projects` on Windows:
 
    ```sh
-   git clone https://github.com/rayitalks/security-hardening-agent.git
-   cd security-hardening-agent
+   git clone https://github.com/rayitalks/ray-i-security-hardening-agent.git
+   cd ray-i-security-hardening-agent
    ```
 
 4. **Windows:** double-click `Setup-Windows.bat`. **Mac:** open Terminal in the cloned folder and run:
@@ -63,7 +63,7 @@ Use actual file paths in place of the example. Review `git diff --cached` before
 To create a separate copy of the original baseline without disturbing your current changes:
 
 ```sh
-git clone --branch baseline-v1 https://github.com/rayitalks/security-hardening-agent.git security-hardening-agent-baseline
+git clone --branch baseline-v1 https://github.com/rayitalks/ray-i-security-hardening-agent.git security-hardening-agent-baseline
 ```
 
 That clone starts in detached-HEAD mode. Create a branch before developing from it.

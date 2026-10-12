@@ -1,4 +1,4 @@
-"""The Security Hardening Agent — local assessment console."""
+"""Ray-i Security Hardening Agent — local assessment console."""
 import json
 import os
 import secrets
@@ -304,5 +304,5 @@ if __name__ == '__main__':
     integrity_monitor.start_scheduler()
     if '--open' in __import__('sys').argv:
         webbrowser.open(ORIGIN)
-    print('The Security Hardening Agent: ' + ORIGIN, flush=True)
+    print('Ray-i Security Hardening Agent: ' + ORIGIN, flush=True)
     server.serve_forever()

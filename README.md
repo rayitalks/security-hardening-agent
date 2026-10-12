@@ -1,8 +1,8 @@
-# The Security Hardening Agent
+# Ray-i Security Hardening Agent
 
-**New device? Start with [START-HERE.md](START-HERE.md)** for this private repository's Windows and Mac setup, saved baseline, and sync workflow. The historical installation paths below refer to the original computer.
+**New device? Start with [START-HERE.md](START-HERE.md)** for this repository's Windows and Mac setup, saved baseline, and sync workflow. The historical installation paths below refer to the original computer.
 
-The Security Hardening Agent is Ray-i's local security assessment console. It inspects AI agent projects, skills, model artifacts, inference endpoints, dependency inventories, containers, host configuration, and network evidence. Findings can become a prioritized action list for an AI agent to verify and carry out within the user's instructions.
+Ray-i Security Hardening Agent is Ray-i's local security assessment console. It inspects AI agent projects, skills, model artifacts, inference endpoints, dependency inventories, containers, host configuration, and network evidence. Findings can become a prioritized action list for an AI agent to verify and carry out within the user's instructions.
 
 Trademark of Ray-i Consulting LLC.
 
@@ -58,7 +58,7 @@ The skill supplies operating guidance and mode selection; it does not turn the d
 
 ## Start the app
 
-On this computer, use the desktop shortcut **The Security Hardening Agent**, or the `Start-Windows.bat` launcher in:
+On this computer, use the desktop shortcut **Ray-i Security Hardening Agent**, or the `Start-Windows.bat` launcher in:
 
 `C:\Users\itsup\Documents\Codex\2026-10-02\cna\outputs\SecurityHardeningAgent`
 
@@ -96,7 +96,7 @@ The supplied image definition includes SkillSpector, Trivy, ModelAudit, Scapy, p
 
 ## Desktop file comparison
 
-The desktop **The Security Hardening Agent.lnk** targets `C:\Python314\pythonw.exe` with the app folder's `launch.py`. The process listening on 8765 runs `app.py` in that same folder. They are the **same application**.
+The desktop **Ray-i Security Hardening Agent.lnk** targets `C:\Python314\pythonw.exe` with the app folder's `launch.py`. The process listening on 8765 runs `app.py` in that same folder. They are the **same application**.
 
 No `.sh` or `.sh.*` file was found in the available user or Public desktop folders during this inspection. The app's own **`start.sh`** is a three-line macOS/Linux launcher: it changes into its folder and executes `python3 launch.py`. It launches this same app; it is not a second agent implementation.
 
